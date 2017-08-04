@@ -230,10 +230,11 @@ figure {
     margin-top: 80px;
   }
 
+  /*MOVIE LIST*/
+    .movie {
+      margin-left: 80px;
+    }
 
-/*MOVIE LIST*/
-  .movie {
-    margin-left: 80px;
-  }
-
-}
+    .movie-overview {
+      display: block;
+    }
