@@ -203,38 +203,86 @@ figure {
 
 @media (min-width:768px) {
   /*NAVIGATION*/
-  .site-logo {
-    z-index: 200;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: .625rem;
-    left: .625rem;
+.site-logo {
+  z-index: 200;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: .625rem;
+  left: .625rem;
+}
 
+.site-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0px;
+  width: 80px;
+}
+
+.site-nav-item {
+  float: none;
+  width: initial;
+}
+
+.site-nav-list {
+  margin-top: 80px;
+}
+
+/*MOVIE LIST*/
+  .movie {
+    margin-left: 80px;
   }
 
-  .site-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    top: 0px;
-    width: 80px;
+  .movie-overview {
+    display: block;
   }
 
-  .site-nav-item {
-    float: none;
-    width: initial;
+  /*FOOTER*/
+  .site-footer {
+    margin-left: 80px;
   }
 
-  .site-nav-list {
-    margin-top: 80px;
+  .footer-nav-list {
+    float:left;
+    width: 30%;
+}
+
+  .about {
+    float:left;
+    width: 30%;
   }
 
-  /*MOVIE LIST*/
-    .movie {
-      margin-left: 80px;
-    }
 
-    .movie-overview {
-      display: block;
-    }
+
+@media (min-width:992px) {
+  /*MOVIE POSTERS*/
+  .movie-poster {
+    display:inherit;
+    float:left;
+    width:33.3333%;
+  }
+
+  .movie:first-child .movie-poster {
+    display:none;
+  }
+
+  .movie-backdrop {
+    display:none;
+  }
+
+  .movie:first-child .movie-backdrop {
+    display:inherit;
+  }
+
+  .movie-overview {
+    display:none;
+  }
+
+  .movie:first-child .movie-overview {
+    display:inherit;
+  }
+
+  footer {
+    clearfix:both;
+  }
