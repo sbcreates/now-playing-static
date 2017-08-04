@@ -195,3 +195,45 @@ figure {
 .about > p {
   margin: 0;
 }
+
+
+/*--------------------------*/
+/*RESPONSIVE DESIGN CODE*/
+/*--------------------------*/
+
+@media (min-width:768px) {
+  /*NAVIGATION*/
+  .site-logo {
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: .625rem;
+    left: .625rem;
+
+  }
+
+  .site-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+    width: 80px;
+  }
+
+  .site-nav-item {
+    float: none;
+    width: initial;
+  }
+
+  .site-nav-list {
+    margin-top: 80px;
+  }
+
+
+/*MOVIE LIST*/
+  .movie {
+    margin-left: 80px;
+  }
+
+}
