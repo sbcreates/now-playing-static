@@ -230,29 +230,35 @@ figure {
 }
 
 /*MOVIE LIST*/
-  .movie {
-    margin-left: 80px;
+.movie {
+  margin-left: 80px;
   }
 
-  .movie-overview {
-    display: block;
+.movie-overview {    display: block;
   }
 
   /*FOOTER*/
   .site-footer {
     margin-left: 80px;
+    overflow: hidden;
+
   }
 
-  .footer-nav-list {
+  .footer-nav {
     float:left;
-    width: 30%;
+    width: 50%;
+    background-color:#333333;
+    color:white;
 }
 
-  .about {
-    float:left;
-    width: 30%;
+  .footer-nav-list {
+    padding: .625rem 0;
   }
 
+  .about {
+    float:right;
+    width: 50%;
+  }
 
 
 @media (min-width:992px) {
@@ -280,9 +286,19 @@ figure {
   }
 
   .movie:first-child .movie-overview {
-    display:inherit;
+    display: inherit;
   }
 
-  footer {
-    clearfix:both;
+  .movie:first-child .movie-overview {
+    display: inherit;
+  }
+
+  .movie-title {
+    float:left;
+    width: 33.333%;
+  }
+
+  .movie:first-child .movie-title {
+    display:block;
+    width:100%;
   }
