@@ -198,10 +198,16 @@ figure {
 
 
 /*--------------------------*/
-/*RESPONSIVE DESIGN CODE*/
+/*RESPONSIVE DESIGN CODE
+BREAKPOINT 768PX*/
 /*--------------------------*/
 
 @media (min-width:768px) {
+
+body {
+  padding: 0;
+}
+
   /*NAVIGATION*/
 .site-logo {
   z-index: 200;
@@ -240,15 +246,14 @@ figure {
   /*FOOTER*/
   .site-footer {
     margin-left: 80px;
-    overflow: hidden;
-
   }
 
   .footer-nav {
-    float:left;
+    float: left;
     width: 50%;
     background-color:#333333;
     color:white;
+    overflow: hidden;
 }
 
   .footer-nav-list {
@@ -256,15 +261,25 @@ figure {
   }
 
   .about {
-    float:right;
+    float: right;
     width: 50%;
   }
 
 
+
+  /*--------------------------*/
+  /*RESPONSIVE DESIGN CODE
+  BREAKPOINT 992PX*/
+  /*--------------------------*/
+
 @media (min-width:992px) {
+  main {
+    overflow: hidden;
+  }
+
   /*MOVIE POSTERS*/
   .movie-poster {
-    display:inherit;
+    display: inherit;
     float:left;
     width:33.3333%;
   }
@@ -273,6 +288,7 @@ figure {
     display:none;
   }
 
+  /*MOVIE BACKDROPS*/
   .movie-backdrop {
     display:none;
   }
@@ -280,6 +296,18 @@ figure {
   .movie:first-child .movie-backdrop {
     display:inherit;
   }
+
+  .movie-details {
+
+    width: 33.333%;
+  }
+
+  .movie:first-child .movie-details {
+    display:block;
+    width:100%;
+  }
+
+/*MOVIE DESCRIPTION*/
 
   .movie-overview {
     display:none;
@@ -289,16 +317,5 @@ figure {
     display: inherit;
   }
 
-  .movie:first-child .movie-overview {
-    display: inherit;
-  }
 
-  .movie-title {
-    float:left;
-    width: 33.333%;
-  }
-
-  .movie:first-child .movie-title {
-    display:block;
-    width:100%;
-  }
+}
